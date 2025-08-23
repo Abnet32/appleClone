@@ -1,4 +1,4 @@
-import flag from "../images/icons/16.png";
+import flag from "../../images/icons/16.png";
 
 function Footer() {
   return (

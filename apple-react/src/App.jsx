@@ -1,14 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Alert from "./components/Alert";
-import First from "./components/First";
-import Second from "./components/Second";
-import Third from "./components/Third";
-import Fourth from "./components/Fourth";
-import Fifth from "./components/Fifth";
-import Six from "./components/Six";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Alert from "./components/Alert/Alert";
+import First from "./components/First/First";
+import Second from "./components/Second/Second";
+import Third from "./components/Third/Third";
+import Fourth from "./components/Fourth/Fourth";
+import Fifth from "./components/Fifth/Fifth";
+import Six from "./components/Six/Six";
 
 function App() {
   return (

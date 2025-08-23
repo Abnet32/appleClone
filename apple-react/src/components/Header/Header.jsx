@@ -1,6 +1,6 @@
-import logo from '../images/icons/logo-sm.png'
-import cart from '../images/icons/cart-sm.png'
-import search from "../images/icons/search-icon-sm.png";
+import logo from '../../images/icons/logo-sm.png'
+import cart from '../../images/icons/cart-sm.png'
+import search from "../../images/icons/search-icon-sm.png";
 function Header() {
   return (
        <div className="nav-wrapper fixed-top">

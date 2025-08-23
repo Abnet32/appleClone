@@ -1,4 +1,4 @@
-import Arcade from '../images/icons/arcade.png'
+import Arcade from '../../images/icons/arcade.png'
 
 function Six() {
   return (

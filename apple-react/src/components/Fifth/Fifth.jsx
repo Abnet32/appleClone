@@ -1,6 +1,6 @@
-import Appletv from '../images/icons/apple-tv-logo.png'
-import Banker from '../images/home/banker.png'
-import Watch from '../images/icons/watch-series5-logo.png'
+import Appletv from '../../images/icons/apple-tv-logo.png'
+import Banker from '../../images/home/banker.png'
+import Watch from '../../images/icons/watch-series5-logo.png'
 function Fifth() {
   return (
  <section class="fifth-heghlight-wrapper">
