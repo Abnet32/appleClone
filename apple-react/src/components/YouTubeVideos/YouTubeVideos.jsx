@@ -9,21 +9,25 @@
 // evangadi = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCxA7AzkI2Sndf8S1G5rSkwQ&maxResults=8&order=relevance&key=AIzaSyBwB7nn9pWQfAhzfmeVBaPs7ViaBnVXePI'
 
 import { useState, useEffect } from "react";
-
 import './YouTubeVideos.css'
 
 export default function YouTubeVideos() {
-    const [YouTubeVideos, setYouTubeVideos] = useState([]);
+  const [youTubeVideos, setYouTubeVideos] = useState([]);
 
   useEffect(() => {
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=8&order=relevance&key=AIzaSyBwB7nn9pWQfAhzfmeVBaPs7ViaBnVXePI`
-    )
-      .then((response) => response.json())
-      .then((data) => {
+    const fetchVideos = async () => {
+      try {
+        const response = await fetch(
+          `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=8&order=relevance&key=AIzaSyBwB7nn9pWQfAhzfmeVBaPs7ViaBnVXePI`
+        );
+        const data = await response.json();
         setYouTubeVideos(data.items || []);
-      })
-      .catch((error) => console.error("Error fetching YouTube data:", error));
+      } catch (error) {
+        console.error("Error fetching YouTube data:", error);
+      }
+    };
+
+    fetchVideos();
   }, []);
 
   return (
@@ -32,11 +36,11 @@ export default function YouTubeVideos() {
         <div className="row h-100 align-items-center justify-content-center text-center">
           <div className="col-12">
             <div className="title-wraper bold video-title-wrapper">
-              Apple Video
+              Apple Videos
             </div>
           </div>
 
-          {YouTubeVideos.map((singleVideo, i) => {
+          {youTubeVideos.map((singleVideo, i) => {
             const vidId = singleVideo.id.videoId;
             const vidLink = `https://www.youtube.com/watch?v=${vidId}`;
 
@@ -73,3 +77,4 @@ export default function YouTubeVideos() {
     </div>
   );
 }
+
