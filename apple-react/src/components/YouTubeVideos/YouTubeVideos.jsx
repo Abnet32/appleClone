@@ -21,7 +21,7 @@ export default function YouTubeVideos() {
           `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=8&order=relevance&key=AIzaSyBwB7nn9pWQfAhzfmeVBaPs7ViaBnVXePI`
         );
         const data = await response.json();
-        setYouTubeVideos(data.items || []);
+        setYouTubeVideos(data?.items || []);
       } catch (error) {
         console.error("Error fetching YouTube data:", error);
       }
@@ -36,11 +36,11 @@ export default function YouTubeVideos() {
         <div className="row h-100 align-items-center justify-content-center text-center">
           <div className="col-12">
             <div className="title-wraper bold video-title-wrapper">
-              Apple Videos
+              Apple Video
             </div>
           </div>
 
-          {youTubeVideos.map((singleVideo, i) => {
+          {youTubeVideos?.map((singleVideo, i) => {
             const vidId = singleVideo.id.videoId;
             const vidLink = `https://www.youtube.com/watch?v=${vidId}`;
 
