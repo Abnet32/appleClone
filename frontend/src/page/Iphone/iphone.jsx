@@ -1,25 +1,25 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-// import { axiosInstance } from "../../utils/axiosInstance";
+import { axiosInstance } from "../../utils/axiosInstance";
 
 function Iphone() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    const getIphones = async () => {
-      try {
-        const res = await fetch("/iphone.json");
-        const data = await res.json();
-        console.log(data);
-        setProducts(data.products);
-      } catch (error) {
-        console.log("Error: unable to fetch: ", error);
-      }
-    };
-
     // const getIphones = async () => {
-    //   const response = await axiosInstance("iphones");
-    //   setProducts(response.data.products);
+    //   try {
+    //     const res = await fetch("/iphone.json");
+    //     const data = await res.json();
+    //     console.log(data);
+    //     setProducts(data.products);
+    //   } catch (error) {
+    //     console.log("Error: unable to fetch: ", error);
+    //   }
     // };
+
+    const getIphones = async () => {
+      const response = await axiosInstance("iphones");
+      setProducts(response.data.products);
+    };
     getIphones();
   }, []);
   console.log(products);
