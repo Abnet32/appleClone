@@ -22,8 +22,6 @@ A **full-stack Apple Clone** web application built with **MERN stack + MySQL**. 
 ## 📌 Features
 - 🛍️ Product listings (iPhones, MacBooks, etc.)  
 - 🔍 Product details with images, descriptions & pricing  
-- 🛒 Add to cart functionality  
-- 👤 User accounts & authentication (optional with JWT)  
 - 📱 Responsive design  
 
 ---
