@@ -1,12 +1,23 @@
-# React + Vite
+# 🍏 Apple Clone (MERN + MySQL + Vite + React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **full-stack Apple Clone** web application built with **MERN stack + MySQL**. The frontend is powered by **React + Vite**, and the backend is built with **Node.js, Express, and MySQL** for data storage. The UI is designed to look and feel like Apple’s official website.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- **Frontend:** React + Vite, TailwindCSS, Axios  
+- **Backend:** Node.js, Express.js, MySQL (mysql2)  
+- **Other:** dotenv, ESLint, CORS  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+- 🛍️ Product listings (iPhones, MacBooks, etc.)  
+- 🔍 Product details with images, descriptions & pricing  
+- 🛒 Add to cart functionality  
+- 👤 User accounts & authentication (optional with JWT)  
+- 📱 Responsive design  
+
+---
+Developed by Abnet
+
