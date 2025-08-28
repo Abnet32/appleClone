@@ -5,13 +5,13 @@ import { axiosInstance } from "../../utils/axiosInstance";
 function Iphone() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
+
     const getIphones = async () => {
       const response = await axiosInstance("iphones");
       setProducts(response.data.products);
     };
     getIphones();
   }, []);
-  console.log(products);
   let flip = true;
   return (
     <div>
