@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import './YouTubeVideos.css'
 
 export default function YouTubeVideos() {
   const [youTubeVideos, setYouTubeVideos] = useState([]);

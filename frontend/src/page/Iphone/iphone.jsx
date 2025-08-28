@@ -63,11 +63,11 @@ function Iphone() {
           >
             <div className={`col-sm-12 col-md-6 my-auto order-${order1}`}>
               <div className="product-title">{name}</div>
-              <div className="product-brief">{Brief}</div>
-              <div className="starting-price">
+              <div className="product-brief publish">{Brief}</div>
+              <div className="starting-price publish">
                 {`Starting at ${StartPrice}`}
               </div>
-              <div className="monthly-price">{PriceRange}</div>
+              <div className="monthly-price publish">{PriceRange}</div>
               <div className="links-wrapper">
                 <ul>
                   <li>

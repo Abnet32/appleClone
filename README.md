@@ -26,5 +26,5 @@ A **full-stack Apple Clone** web application built with **MERN stack + MySQL**. 
 
 ---
 👨‍💻 Author
-Developed by Abnet
+Developed by Abnet Mekonen
 

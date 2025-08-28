@@ -31,13 +31,13 @@ const SingleAppleProduct = () => {
 
             <div className="row justify-content-center text-center product-holder h-100 m-5">
               <div className={`col-sm-12 col-md-6 my-auto`}>
-                <div className="starting-price">
+                <div className="starting-price publish">
                   {`Starting at ${singleProduct?.starting_price}`}
                 </div>
-                <div className="monthly-price">
+                <div className="monthly-price publish">
                   {singleProduct?.price_range}
                 </div>
-                <div className="product-details">
+                <div className="product-details publish">
                   {singleProduct?.product_description}
                 </div>
               </div>
