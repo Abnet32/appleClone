@@ -1,10 +1,4 @@
 {
-  "name": "my-backend",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "node index.js",
-    "vercel-build": "echo 'Skipping build step'"
-  },
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
