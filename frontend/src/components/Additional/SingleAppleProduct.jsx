@@ -5,6 +5,7 @@ import { axiosInstance } from "../../utils/axiosInstance";
 const SingleAppleProduct = () => {
   const { id } = useParams();
   const [singleProduct, setSingleProduct] = useState(null);
+  
   useEffect(() => {
     const getSingleProduct = async () => {
       const response = await axiosInstance(`iphones/${id}`);
